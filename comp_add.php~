@@ -16,7 +16,10 @@ if(!mysql_query($sql,$con))
 else
 {?><script>
 	var c=confirm("Complaint/Review sucessfully registered");
-	if(c==true)
+
+
+
+if(c==true)
 	{
 	self.location="user.php";}
 	</script><?php
