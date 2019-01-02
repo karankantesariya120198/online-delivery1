@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +16,7 @@
 	
 <script>
 
+
 function snd()
 {var flag=1;
  var nam=document.forms["reg"]["cnam"].value;
@@ -23,47 +26,59 @@ function snd()
  var st=document.forms["reg"]["st"].value;
  var ar=document.forms["reg"]["area2"].value;
  
+
  var hno=document.forms["reg"]["house_no"].value;
   var mail=document.forms["reg"]["mail"].value;
   var mob1=document.forms["reg"]["mobile"].value;
 if(nam.length==0||nam.length<6){document.getElementById("appnam1").innerHTML="<div style='color:red'><b>Must be 6 or more char long</b></div>";flag=0;}
  else 
-document.getElementById("appnam1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("appnam1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(unam.length==0||unam.length<6){document.getElementById("village1").innerHTML="<div style='color:red'><b>Must be 6 or more char long</b></div>";flag=0;}
  else 
-document.getElementById("village1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("village1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(pod1.length==0){document.getElementById("password").innerHTML="<div style='color:red'><b>Must be populated</b></div>";flag=0;}
  else 
-document.getElementById("password").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+	 
+
+	 document.getElementById("password").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(pod2.length==0){document.getElementById("password1").innerHTML="<div style='color:red'><b>Must be populated</b></div>";flag=0;}
  else 
-document.getElementById("password1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("password1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(st.length==0){document.getElementById("street1").innerHTML="<div style='color:red'><b>Must be populated</b></div>";flag=0;}
  else 
-document.getElementById("street1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("street1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(ar.length==0){document.getElementById("area1").innerHTML="<div style='color:red'><b>Must be populated</b></div>";flag=0;}
  else 
-document.getElementById("area1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("area1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(mail.length==0||mail.indexOf('@',0)==-1||mail.indexOf('.',0)==-1){document.getElementById("mail1").innerHTML="<div style='color:red'><b>Enter correctly</b></div>";flag=0;}
  else 
-document.getElementById("mail1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("mail1").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(mob1.length==0){document.getElementById("mno").innerHTML="<div style='color:red'><b>Must be populated</b></div>";flag=0;}
  else 
-document.getElementById("mno").innerHTML="<div style='color:green'><b>OK</b></div>"; 
+
+	 document.getElementById("mno").innerHTML="<div style='color:green'><b>OK</b></div>"; 
 
 if(hno.length==0){document.getElementById("hno1").innerHTML="<div style='color:red'><b>Enter numbers</b></div>";flag=0;}
  else 
-document.getElementById("hno1").innerHTML="<div style='color:green'><b>OK</b></div>";
+
+	 document.getElementById("hno1").innerHTML="<div style='color:green'><b>OK</b></div>";
 
 if(flag==1) 
-document.getElementById("contact-form").submit();
+
+	document.getElementById("contact-form").submit();
 
  
  
